@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{FCD4EFF8-D179-268F-82BE-F70DB66F8DD8}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-UnityScript</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_STANDALONE;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_0_0;UNITY_4_0;UNITY_STANDALONE_WIN;ENABLE_PROFILER;UNITY_EDITOR;UNITY_TEAM_LICENSE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="UnityEngine">
+	  <HintPath>D:/Apps/Unity 4.0.0/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>D:/Apps/Unity 4.0.0/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\EnemyScriptPlayer.js" />
+     <Compile Include="Assets\Exitcredits&amp;help.js" />
+     <Compile Include="Assets\FlyingCamera.js" />
+     <Compile Include="Assets\Game objects\togglevision.js" />
+     <Compile Include="Assets\Gamequit.js" />
+     <Compile Include="Assets\Loose scripts\CollectPapers.js" />
+     <Compile Include="Assets\Loose scripts\EnemyScript.js" />
+     <Compile Include="Assets\Returntomainmenu.js" />
+     <Compile Include="Assets\Tinkypopupcontrol.js" />
+     <Compile Include="Assets\Tinkyvision.js" />
+     <Compile Include="Assets\createonclick.js" />
+     <Compile Include="Assets\crouch and run.js" />
+     <Compile Include="Assets\destoryaftertimer.js" />
+     <Compile Include="Assets\disconnect&amp;end.js" />
+     <Compile Include="Assets\disconnect&amp;endwon.js" />
+     <Compile Include="Assets\flashlight.js" />
+     <Compile Include="Assets\hooverscript.js" />
+     <Compile Include="Assets\map\map.js" />
+     <Compile Include="Assets\map\mappopup.js" />
+     <Compile Include="Assets\menubuttons\Back.js" />
+     <Compile Include="Assets\menubuttons\Backsettings.js" />
+     <Compile Include="Assets\menubuttons\Multiplayerbutton#.js" />
+     <Compile Include="Assets\menubuttons\Settings.js" />
+     <Compile Include="Assets\menubuttons\Singleplayerbutton#.js" />
+     <Compile Include="Assets\menubuttons\coopbutton#.js" />
+     <Compile Include="Assets\menubuttons\coopday.js" />
+     <Compile Include="Assets\menubuttons\coopdusk.js" />
+     <Compile Include="Assets\menubuttons\coopnight.js" />
+     <Compile Include="Assets\menubuttons\singleplayerday.js" />
+     <Compile Include="Assets\menubuttons\singleplayerdusk.js" />
+     <Compile Include="Assets\menubuttons\singleplayernight.js" />
+     <Compile Include="Assets\menubuttons\versesbutton#.js" />
+     <Compile Include="Assets\menubuttons\versesday.js" />
+     <Compile Include="Assets\menubuttons\versesdusk.js" />
+     <Compile Include="Assets\menubuttons\versesnight.js" />
+     <Compile Include="Assets\nightvision.js" />
+     <Compile Include="Assets\playerwalkingsound.js" />
+     <Compile Include="Assets\popups\Popup gui script.js" />
+     <Compile Include="Assets\popups\Popups.js" />
+     <Compile Include="Assets\popups\setqualitylevel.js" />
+     <Compile Include="Assets\spawnslendysgui.js" />
+     <Compile Include="Assets\spawnvictumgui.js" />
+     <Compile Include="Assets\teletubby house\DoorOpen.js" />
+     <None Include="Assets\Standard Assets\Particles\Sources\Shaders\Particle Alpha Blend (Queue +100).shader" />
+     <None Include="Assets\Standard Assets\Water (Basic)\Sources\Shaders\FX-Water Simple.shader" />
+     <None Include="Assets\Standard Assets\Skyboxes\skybox info.txt" />
+ <Reference Include="Assembly-UnityScript-firstpass">
+ <HintPath>Library\ScriptAssemblies\Assembly-UnityScript-firstpass.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
+      <Project>{B98E2068-F04F-3C1E-3FD1-7FF8CC6B3025}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
